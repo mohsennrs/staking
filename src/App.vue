@@ -1,28 +1,55 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" dir="rtl">
+    <aside>
+      <Sidebar/>
+    </aside> 
+    <nav id="header"> 
+      <Header/>
+    </nav>
+    <main>
+      <Earn/>
+    </main>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Sidebar from './components/Sidebar.vue'
+import Earn from './components/Earn.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Sidebar,
+    Earn
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './assets/variables.scss';
+  aside {
+    width: 17%;
+    position: fixed;
+    right: 0;
+  }
+  nav#header {
+    position: fixed;
+    width: 83%;
+    left: 0;
+  }
+  #app {
+    background-color: $pale-gray;
+  }
+
+  main {
+    position: absolute;
+    top: 64px;
+    width: 83%;
+    left: 0;
+    padding: 22px;
+    text-align: right;
+  }
 </style>

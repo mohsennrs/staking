@@ -1,0 +1,38 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import './variables.scss';
+
+@font-face {
+	font-family: 'Yekan';
+	src:	url('/Fonts/Yekan-Font-3.0/Yekan.eot'); /* IE9 Compat Modes */
+	src:	url('/Fonts/Yekan-Font-3.0/Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('/Fonts/Yekan-Font-3.0/Yekan.woff2') format('woff2'), /* Modern Browsers */
+			url('/Fonts/Yekan-Font-3.0/Yekan.woff') format('woff'), /* Modern Browsers */
+			url('/Fonts/Yekan-Font-3.0/Yekan.otf') format('opentype'), /* Open Type Font */	
+			url('/Fonts/Yekan-Font-3.0/Yekan.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+
+.bg-primary-dark {
+  background-color: $primary-dark;
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg-gray {
+  background: $gray;
+}
+
+.text-light-gray {
+  color: $light-gray;
+}
+
+body {
+  font-family: Yekan;
+  font-size: 16px;
+}
