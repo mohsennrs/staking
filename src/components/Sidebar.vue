@@ -1,6 +1,6 @@
 <template>
   <div>
-   <b-sidebar id="sidebar-1" title="Sidebar" right shadow visible no-header bg-variant="dark-blue" class="text-right" width="17%">
+   <b-sidebar id="sidebar-1" title="Sidebar" right shadow visible no-header no-close-on-backdrop no-close-on-route-change bg-variant="dark-blue" class="text-right" width="17%">
      <div id="sidebar-no-header-title" class="d-flex justify-content-center py-4">
         <img src="/Icons/eth.png" alt="">
       </div>
@@ -53,9 +53,13 @@
               <b-nav-item class="nested-nav-item">
                 <span class="mr-5">کیف پول</span>
               </b-nav-item>
-              <b-nav-text class="nested-nav-item" active>
-                <router-link to="earn" class="mr-5"> درآمد (Earn)</router-link>
-              </b-nav-text>
+              <!-- <li data-v-7d622f5c="" class="nav-item nested-nav-item">
+                <div class="nav-link active"><router-link data-v-7d622f5c="" to="/earn" class="mr-5"> درآمد (Earn)</router-link>
+                </div>
+              </li> -->
+              <b-nav-item class="nested-nav-item" active>
+                <router-link to="/earn" class="mr-5"> درآمد (Earn)</router-link>
+              </b-nav-item>
               <b-nav-item class="nested-nav-item">
                 <span class="mr-5">تاریخچه ی معاملات</span>
               </b-nav-item>
@@ -98,7 +102,7 @@ export default {
   }
 
   .nav-item {
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
     .nav-link {
       color: $light-gray;
 
@@ -108,6 +112,10 @@ export default {
 
       &.active {
         color: $light-gold;
+      }
+
+      a {
+        color: inherit;
       }
     }
   }

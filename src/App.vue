@@ -7,7 +7,7 @@
       <Header/>
     </nav>
     <main>
-      <Earn/>
+      <router-view></router-view>
     </main>
     
   </div>
@@ -16,14 +16,12 @@
 <script>
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
-import Earn from './components/Earn.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Sidebar,
-    Earn
+    Sidebar
   }
 }
 </script>

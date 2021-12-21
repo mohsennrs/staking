@@ -1,19 +1,29 @@
 <template>
-    <b-card header-tag="header" footer-tag="footer">
+    <b-card header-tag="header">
         <template #header >
             <div class="d-flex justify-content-between p-2">
                 <h1 class="mb-0 d-inline">درآمد (Earn)</h1>
                 <b-button pill variant="outline-secondary" class="mt-2 py-0" id="guid-button">راهنما <font-awesome-icon icon="fa-solid fa-circle-exclamation" class="mr-2 "/></b-button>
             </div>
         </template>
-        <b-card-text>Header and footers using slots.</b-card-text>
-        <b-button href="#" variant="primary">Go somewhere</b-button>
+        <div class="row">
+            <div class="col-md-6">
+                <Calculator />
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
        
       </b-card>
 </template>
 <script>
+import Calculator from '../components/Calculator.vue'
 export default {
-
+    name: 'Earn',
+    components: {
+        Calculator
+    }
 }
 </script>
 <style scoped lang="scss">
