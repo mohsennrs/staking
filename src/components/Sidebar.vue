@@ -53,10 +53,6 @@
               <b-nav-item class="nested-nav-item">
                 <span class="mr-5">کیف پول</span>
               </b-nav-item>
-              <!-- <li data-v-7d622f5c="" class="nav-item nested-nav-item">
-                <div class="nav-link active"><router-link data-v-7d622f5c="" to="/earn" class="mr-5"> درآمد (Earn)</router-link>
-                </div>
-              </li> -->
               <b-nav-item class="nested-nav-item" active>
                 <router-link to="/earn" class="mr-5"> درآمد (Earn)</router-link>
               </b-nav-item>
@@ -64,11 +60,11 @@
                 <span class="mr-5">تاریخچه ی معاملات</span>
               </b-nav-item>
               <b-nav-item>
-                <font-awesome-icon icon="fa-solid fa-gear" />
+                <font-awesome-icon icon="fa-solid fa-gear" size="xl"/>
                 <span>تنظیمات</span>
               </b-nav-item>
               <b-nav-item>
-                <font-awesome-icon icon="fa-solid fa-envelope" />
+                <font-awesome-icon icon="fa-solid fa-envelope" size="xl"/>
                 <span>گزارش‌های شما</span>
               </b-nav-item>
             </b-nav>
@@ -98,16 +94,16 @@ export default {
   }
   .card {
     border-radius: 4px;
-    line-height: 0.5;
+    line-height: 1;
   }
 
   .nav-item {
-    margin: 5px 0 5px 0;
+    // margin: 5px 0 5px 0;
     .nav-link {
       color: $light-gray;
 
       span {
-        margin: 0 20px 0 20px;
+        margin: 0 10px 0 0;
       }
 
       &.active {
