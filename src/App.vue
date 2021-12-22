@@ -37,6 +37,7 @@ export default {
     position: fixed;
     width: 83%;
     left: 0;
+    z-index: 2;
   }
   #app {
     background-color: $pale-gray;
@@ -49,5 +50,6 @@ export default {
     left: 0;
     padding: 22px;
     text-align: right;
+    background-color: $pale-gray;
   }
 </style>
